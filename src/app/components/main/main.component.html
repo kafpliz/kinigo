@@ -1,1 +1,74 @@
-<p>main works!</p>
+<div class="main">
+    <div class="background">
+        <img src="/assets/img/background_1.png" alt="" class="background-img">
+        <img src="/assets/logotips/bigLogo.svg" alt="" class="background-logo">
+    </div>
+    <div class="text">
+        <div class="header-text">
+            <h1 class="header-text-h1">The Best Streaming Experience</h1>
+            <span class="header-text-span">StreamVibe is the best streaming experience for watching your favorite movies
+                and shows on demand, anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content,
+                including the latest blockbusters, classic movies, popular TV shows, and more. You can also create your
+                own watchlists, so you can easily find the content you want to watch.</span>
+        </div>
+        <div class="button-block">
+            <div class="button">
+                <img src="/assets/icons/watch.svg" alt="icon" width="20" srcset="">
+                <span>Start Watching Now</span>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="genres">
+            <div class="genres-info">
+                <h2 class="genres-info-h1">Explore our wide variety of categories</h2>
+                <span class="genres-info-span">Whether you're looking for a comedy to make you laugh, a drama to make you
+                    think, or a documentary to learn something new</span>
+            </div>
+    
+    
+            <div class="swiper genres-catalog">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide genres-card" *ngFor="let item of genres ">
+                        <div class="genres-imgs">
+                            <div class="genres-fade"></div>
+                            <img class="genres-img" src="https://image.openmoviedb.com/kinopoisk-images/10853012/bdbcf76a-9ddb-4325-a263-3702f6645701/orig" alt="">
+                            <img class="genres-img" src="https://image.openmoviedb.com/kinopoisk-images/10853012/bdbcf76a-9ddb-4325-a263-3702f6645701/orig" alt="">
+                            <img class="genres-img" src="https://image.openmoviedb.com/kinopoisk-images/10853012/bdbcf76a-9ddb-4325-a263-3702f6645701/orig" alt="">
+                            <img class="genres-img" src="https://image.openmoviedb.com/kinopoisk-images/10853012/bdbcf76a-9ddb-4325-a263-3702f6645701/orig" alt="">
+                            
+                        </div>
+                        <div class="genres-link">
+                            <span class="genres-link-span">{{item.name | titlecase}}</span>
+                            <img src="/assets/icons/arrow.svg" width="18px" alt="" srcset="">
+                        </div>
+                    </div>
+                 
+                    
+                </div>
+              
+            </div>
+           
+    
+    
+        </div>
+        <div class="devices">
+            <div class="devices-description">
+                <h2 class="devices-description-h2">We Provide you streaming experience across various devices.</h2>
+                <span class="devices-description-span">With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere. Our platform is designed to be compatible with a wide range of devices, ensuring that you never miss a moment of entertainment.</span>
+            </div>
+            <div class="devices-item">
+                <div class="device-card" *ngFor="let item of devices">
+                    <div class="card-container">
+                        <div class="card-icon"><img [src]="item.photo"  alt="" srcset=""></div>
+                        <div class="card-model">{{item.device}}</div>
+                    </div>
+                    <div class="card-text">{{item.description}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

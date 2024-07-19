@@ -1,0 +1,241 @@
+.main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.background {
+    width: 100%;
+    height: 685px;
+    position: relative;
+}
+
+.background-img {
+    width: 100%;
+    position: absolute;
+    top: -120px;
+    z-index: -1;
+}
+
+.background-logo {
+    position: absolute;
+    left: 700px;
+    top: 50px;
+}
+
+.text {
+    width: 100%;
+    min-height: 400px;
+    padding: 0 412px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.header-text-h1 {
+    color: white;
+    text-align: center;
+    font-size: 58px;
+}
+
+.header-text-span {
+    color: #999999;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.button-block {
+    width: 100%;
+    min-height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 251px;
+    height: 64px;
+    padding: 18px 24px;
+    background: #E50000;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    font-size: 18px;
+    color: white;
+    font-family: ManropeSemiBold;
+}
+
+.content {
+    width: 100%;
+    min-height: 500px;
+    padding: 0 161px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.genres {
+    width: 100%;
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+}
+
+.genres-info {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.genres-info-h1 {
+    color: white;
+    font-size: 38px;
+}
+
+.genres-info-span {
+    font-size: 18px;
+    color: #999999;
+}
+
+.genres-catalog {
+    width: 100%;
+    min-height: 342px;
+
+}
+
+.genres-card {
+    width: 296px;
+    height: 342px;
+    border-radius: 12px;
+    background: #1A1A1A;
+    border: 1px solid #262626;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+}
+
+.genres-imgs {
+    width: 100%;
+    height: 252px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+.genres-fade {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), #1A1A1A);
+    border-radius: 10px;
+}
+
+.genres-img {
+    height: 115px;
+    border-radius: 10px;
+
+}
+
+.genres-link {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.genres-link-span {
+    color: white;
+    font-family: ManropeSemiBold;
+    font-size: 18px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.devices {
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.devices-description {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.devices-description-h2 {
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.devices-description-span {
+    color: #999999;
+    font-size: 18px;
+    width: 1300px;
+}
+.devices-item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.device-card {
+    width: 507px;
+    height: 283px;
+    border-radius: 12px;
+    border: 1px solid #262626;
+    padding: 50px;
+    background: url('/assets/img/device-card-background.jpg');
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.card-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #141414;
+    border: 1px solid #1F1F1F;
+    
+}
+
+.card-model {
+    font-family: ManropeSemiBold;
+    color: white;
+    font-size: 24px;
+}
+.card-text{
+    color: #999999;
+    font-size: 14px;
+}

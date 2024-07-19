@@ -3,6 +3,10 @@
     font-family: ManropeRegular;
     src: url(./assets/fonts/Manrope-Regular.ttf);
 }
+@font-face {
+    font-family: ManropeSemiBold;
+    src: url(./assets/fonts/Manrope-SemiBold.ttf);
+}
 
 *{
     box-sizing: border-box;
@@ -11,3 +15,6 @@
     font-family: ManropeRegular;
 }
 
+body{
+    background: #141414;
+  }
