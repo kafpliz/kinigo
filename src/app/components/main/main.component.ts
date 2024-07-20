@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import Swiper from 'swiper';
 import 'swiper/css';
-import { devicesCard, genres } from '../../utils/allUtils';
+import { devicesCard, genres, tarrifPlans } from '../../utils/allUtils';
 import { CommonModule, TitleCasePipe } from '@angular/common';
 
 @Component({
@@ -14,6 +14,7 @@ import { CommonModule, TitleCasePipe } from '@angular/common';
 export class MainComponent {
   genres:{ name: string; slug: string; }[] = genres;
   devices:{photo:string, device:string, description:string}[] = devicesCard
+  plans: {name: string, description: string, price: {month: {text: string, price: number,},year: {text: string,price: number}}}[] = tarrifPlans
   constructor(){
   
   

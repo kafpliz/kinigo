@@ -76,10 +76,11 @@
 .content {
     width: 100%;
     min-height: 500px;
-    padding: 0 161px;
+    padding: 0 161px 150px;
     display: flex;
     flex-direction: column;
     gap: 150px;
+    
 }
 
 .genres {
@@ -331,8 +332,8 @@
 }
 
 .questions-item:nth-child(2) {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
     flex: 4 1;
 }
 
@@ -343,7 +344,7 @@
     flex: 1 1;
 }
 
-.questions-item-number{
+.questions-item-number {
     width: 62px;
     height: 67px;
     background: #1F1F1F;
@@ -353,32 +354,37 @@
     justify-content: center;
     align-items: center;
 }
-.questions-item-number-span{
+
+.questions-item-number-span {
     font-family: ManropeSemiBold;
     font-size: 20px;
     color: white;
 }
-.question{
+
+.question {
     font-size: 22px;
     color: white;
     font-family: ManropeMedium;
 }
-.questions-cross{
+
+.questions-cross {
     width: 20px;
     height: 20px;
     cursor: pointer;
     position: relative;
 }
-.cross-item:nth-child(1){
+
+.cross-item:nth-child(1) {
     align-self: center;
     width: 100%;
     height: 5px;
     border-radius: 5px;
     background: white;
     position: absolute;
-        bottom: 7.5px;
+    bottom: 7.5px;
 }
-.cross-item:nth-child(2){
+
+.cross-item:nth-child(2) {
     width: 100%;
     height: 5px;
     border-radius: 5px;
@@ -388,6 +394,217 @@
     bottom: 7px;
     transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.questions-cross:hover .cross-item:nth-child(2){
+
+.questions-cross:hover .cross-item:nth-child(2) {
     transform: rotate(180deg);
+}
+
+.tarrifPlan {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.tarrifPlan-header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    gap: 100px;
+}
+
+.tarrifPlan-header_item:nth-child(1) {
+    flex: 4 1;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.tarrifPlan-header_item:nth-child(2) {
+    flex: 1 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+
+.tarrifPlan-header-h2 {
+    color: white;
+    font-size: 38px;
+}
+
+.tarrifPlan-header-span {
+    color: #999999;
+    font-size: 18px;
+}
+
+.tarrifPlan-header-tabs {
+    width: 240px;
+    height: 75px;
+    background: #0F0F0F;
+    border: 1px solid #262626;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+
+}
+
+.tarrifPlan-header-tab {
+    width: 118px;
+    height: 55px;
+    border-radius: 10px;
+    color: #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarrifPlan-header-tab_text {
+
+    font-size: 18px;
+    font-family: ManropeMedium;
+
+}
+
+.tarrifPlan-header-tab-active {
+    background: #1F1F1F;
+    color: white;
+}
+
+.tarrif_plans {
+    width: 100%;
+    min-height: 425px;
+    display: flex;
+    gap: 30px;
+}
+
+.plan_cards {
+    width: 512px;
+    height: 425px;
+    border-radius: 12px;
+    border: 1px solid #262626;
+    background: #1A1A1A;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.plan_description {
+    width: 100%;
+    height: 133px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.plan_description-h3 {
+    color: white;
+    font-size: 24px
+}
+
+.plan_description-span {
+    color: #999999;
+    font-size: 18px;
+}
+
+.plan_price {
+    width: 100%;
+    height: 30px;
+}
+
+.plan_price-span:nth-child(1) {
+    font-size: 40px;
+    color: white;
+    font-family: ManropeSemiBold;
+}
+
+.plan_price-span:nth-child(2) {
+    font-size: 18px;
+    color: #999999;
+    font-family: ManropeMedium;
+}
+
+.plan_buttons {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    gap: 20px;
+    font-family: ManropeSemiBold;
+
+}
+
+.plan_button:nth-child(1) {
+    flex: 1 1;
+    background: #141414;
+    border-radius: 8px;
+    border: 1px solid #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.plan_button:nth-child(2) {
+    flex: 1 1;
+    background: #E50000;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.get_started {
+    width: 100%;
+    min-height: 315px;
+    background: url('/assets/img/get_starder-background.jpg') no-repeat left 0 bottom 0 /cover;
+    border-radius: 12px;
+    padding: 100px 80px;
+    display: flex;
+    gap: 100px;
+}
+
+.get_started__item:nth-child(1) {
+    flex: 4 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.get_started__item:nth-child(2) {
+    flex: 1 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.get_started__item-h2 {
+    font-size: 48px;
+    color: white;
+}
+
+.get_started__item-span {
+    font-size: 18px;
+    color: #999999;
+}
+
+.get_started_button {
+    background: #E50000;
+    width: 188px;
+    height: 65px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.get_started_button-span {
+    color: white;
+    font-size: 18px;
+    font-family: ManropeSemiBold;
 }

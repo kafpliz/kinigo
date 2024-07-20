@@ -216,7 +216,52 @@
             </div>
         </div>
 
-        <div class="tarrifPlan"></div>
+        <div class="tarrifPlan">
+            <div class="tarrifPlan-header">
+                <div class="tarrifPlan-header_item">
+                    <h2 class="tarrifPlan-header-h2">Frequently Asked Questions</h2>
+                    <span class="tarrifPlan-header-span">Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about StreamVibe.</span>
+               
+                </div>
+                <div class="tarrifPlan-header_item">
+                    <div class="tarrifPlan-header-tabs">
+                        <div class="tarrifPlan-header-tab tarrifPlan-header-tab-active">
+                            <span class="tarrifPlan-header-tab_text">Monthly</span>
+                        </div>
+                        <div class="tarrifPlan-header-tab">
+                            <span class="tarrifPlan-header-tab_text">Yearly</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tarrif_plans">
+                <div class="plan_cards" *ngFor="let item of plans">
+                    <div class="plan_description">
+                        <h3 class="plan_description-h3">{{item.name}}</h3>
+                        <span class="plan_description-span">{{item.description}}</span>
+                    </div>
+                    <div class="plan_price">
+                        <span class="plan_price-span">${{item.price.month.price}}</span> <span class="plan_price-span">/{{item.price.month.text}}</span>
+                    </div>
+                    <div class="plan_buttons">
+                        <div class="plan_button"><span class="plan_button-span">Start Free Trial</span></div>
+                        <div class="plan_button"><span class="plan_button-span"></span>Choose Plan</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="get_started">
+            <div class="get_started__item">
+                <h2 class="get_started__item-h2">Start your free trial today!</h2>
+                <span class="get_started__item-span">This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</span>
+            </div>
+            <div class="get_started__item">
+                <div class="get_started_button">
+                    <div class="get_started_button-span">Start a Free Trail</div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
