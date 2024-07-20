@@ -15,6 +15,8 @@ export class MainComponent {
   genres:{ name: string; slug: string; }[] = genres;
   devices:{photo:string, device:string, description:string}[] = devicesCard
   plans: {name: string, description: string, price: {month: {text: string, price: number,},year: {text: string,price: number}}}[] = tarrifPlans
+  planYear:boolean = false;
+
   constructor(){
   
   
@@ -28,4 +30,12 @@ export class MainComponent {
       spaceBetween: 30,
     });
   }
+  changePlan(){
+    if(this.planYear){
+      this.planYear = false
+    } else {
+      this.planYear = true
+    }
+  }
+
 }

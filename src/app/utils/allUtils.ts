@@ -207,3 +207,51 @@ export let tarrifPlans = [
 
   },
 ]
+export let topFiveFilms = [
+  {
+    "id": 1072974,
+    "name": "Герои Энвелла",
+    "shortDescription": "Школьники-геймеры вступают в схватку с виртуальным злом. Хитовый мультсериал от российской студии «Паровоз»",
+    "backdrop": {
+      "url": "https://image.openmoviedb.com/kinopoisk-ott-images/239697/2a00000161423295cb795c68987d01d4268b/orig",
+      "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/239697/2a00000161423295cb795c68987d01d4268b/x1000"
+    }
+  },
+  {
+    "id": 5444474,
+    "name": "Шаранутый космос",
+    "shortDescription": "Астронавт-новичок раскрывает секреты Солнечной системы. Забавный и познавательный сериал о тайной жизни планет",
+    "backdrop": {
+      "url": "https://image.openmoviedb.com/kinopoisk-ott-images/2439731/2a0000018d17ba77ff1a51d6dcf883ad802c/orig",
+      "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/2439731/2a0000018d17ba77ff1a51d6dcf883ad802c/x1000"
+    }
+  },
+  {
+    "id": 1111028,
+    "name": "Минифорс. Новые герои",
+    "shortDescription": "Миниатюрные звери превращаются в воинов и борются со злом. Полный метр о том, как сложилась команда Минифорс",
+    "backdrop": {
+      "url": "https://image.openmoviedb.com/kinopoisk-ott-images/1534341/2a0000017d9e4248a5e4f909efbd79361316/orig",
+      "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/1534341/2a0000017d9e4248a5e4f909efbd79361316/x1000"
+    }
+  },
+  {
+    "id": 5416975,
+    "name": "Атака Титанов: Финал. Расширенная версия",
+    "shortDescription": "Противостояние людей и кровожадных великанов достигает апогея. Развязка эпичной аниме-саги — с новыми сценами!",
+    "backdrop": {
+      "url": "https://image.openmoviedb.com/kinopoisk-ott-images/212840/2a00000186a8b7a1951185c6175ed0f07fd0/orig",
+      "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/212840/2a00000186a8b7a1951185c6175ed0f07fd0/x1000"
+    }
+  },
+  {
+    "id": 961694,
+    "name": "LEGO Супергерои Marvel: Мстители. Снова в сборе",
+    "shortDescription": "В команду Мстителей внедряется искусственный интеллект. Анимация LEGO о схватке супергероев с Альтроном",
+    "backdrop": {
+      "url": "https://image.openmoviedb.com/kinopoisk-ott-images/2385704/2a00000176b814bc72a474c4d15c65390d9b/orig",
+      "previewUrl": "https://image.openmoviedb.com/kinopoisk-ott-images/2385704/2a00000176b814bc72a474c4d15c65390d9b/x1000"
+    }
+  }
+
+]

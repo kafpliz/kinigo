@@ -1,0 +1,37 @@
+<div class="movie_shows">
+    <div class="best_movies">
+        <div class="swiper best_movies-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" *ngFor="let item of bestMovies">
+                    <img class="swiper-slide-background" [src]="item.backdrop.url" alt="backdrop" srcset="">
+                    <div class="slide_content">
+                       <div class="slide_content-text">
+                        <h2 class="slide_content-h2">{{item.name}}</h2>
+                        <span class="slide_content-span">{{item.shortDescription}}</span>
+                       </div>
+                       <div class="slide_content-buttons">
+                            <div class="buttons-item">
+                                <img src="/assets/icons/watch.svg" width="28" alt="" srcset="">
+                                <span class="buttons-item-span">Play Now</span>
+                            </div>
+                            <div class="buttons-item">
+                                <div class="hot_button"><img src="/assets/icons/cross.png" width="28" alt="" srcset=""></div>
+                                <div class="hot_button"><img src="/assets/icons/like.png" width="28" alt="" srcset=""></div>
+                                <div class="hot_button"><img src="/assets/icons/sound.png" width="28" alt="" srcset=""></div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+
+             
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+
+</div>
