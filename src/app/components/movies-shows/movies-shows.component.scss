@@ -10,25 +10,27 @@
 .best_movies {
     width: 100%;
     height: 835px;
-
+    border-radius: 12px;
+    overflow: hidden;
 }
 
-.best_movies-swiper {}
+
 
 .swiper {
     width: 100%;
     height: 100%;
+
 }
 
 
 
 .swiper-slide {
-    border-radius: 12px;
+
     position: relative;
 }
 
 .swiper-slide-background {
-    border-radius: 12px;
+
     z-index: -1;
     position: absolute;
     left: 0;
@@ -102,7 +104,8 @@
     gap: 10px;
 
 }
-.hot_button{
+
+.hot_button {
     width: 56px;
     height: 100%;
     background: #0F0F0F;
@@ -111,4 +114,204 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.content {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.movies {
+    width: 1600px;
+    min-height: 500px;
+    border-radius: 12px;
+    border: 1px solid #262626;
+    padding: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.type {
+    width: 116px;
+    height: 50px;
+    border-radius: 8px;
+    background: #E50000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+}
+
+.type-span {
+    font-size: 20px;
+    font-family: ManropeSemiBold;
+    color: white;
+}
+
+.movies-shows_chapter {
+    width: 100%;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.movies-shows_chapter-header {
+    width: 100%;
+    min-height: 57px;
+}
+
+.movies-shows_chapter-span {
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.movies-shows_chapter-card {
+    width: 296px;
+    height: 378px;
+    border-radius: 12px;
+    background: #1A1A1A;
+    border: 1px solid #262626;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: space-around;
+    gap: 20px;
+}
+.movies-shows_chapter-card_popular{
+    width: 352px;
+}
+
+.movies-shows_chapter-card-all_genres {
+    height: 342px;
+}
+.movies-shows_chapter-card__must_watch{
+    height: 500px;
+}
+.movies-shows_chapter-imgs {
+    width: 100%;
+    height: 252px;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    gap: 5px;
+}
+.movies-shows_chapter-must_watch-imgs{
+   height: 404px;
+}
+.movies-shows_chapter-fade {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), #1A1A1A);
+    border-radius: 10px;
+}
+
+.movies-shows_chapter-img {
+    width: 40%;
+    flex: 1 1 auto;
+    border-radius: 10px;
+
+}
+
+.movies-shows_chapter-link {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.movies-shows_chapter-link-span {
+    color: white;
+    font-family: ManropeSemiBold;
+    font-size: 18px;
+}
+
+.movies-shows_chapter__top {
+    width: 86px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #E50000;
+}
+
+.movies-shows_chapter__top-span {
+    font-size: 16px;
+    color: white;
+    font-family: ManropeSemiBold;
+}
+
+.movies-shows_chapter-card_footer {
+    width: 100%;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_footer-item:nth-child(1) {
+    min-width: 108px;
+    height: 100%;
+    border-radius: 51px;
+    background: #141414;
+    border: 1px solid #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.card_footer-item__span {
+    font-size: 16px;
+    color: #999999;
+}
+
+.card_footer-item:nth-child(2) {
+    min-width: 64px;
+    height: 100%;
+    border-radius: 51px;
+    background: #141414;
+    border: 1px solid #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    padding: 6px;
+
+}
+.movies-shows_chapter-card_footer_releases{
+    width: 100%;
+    height: 36px;
+    background: #141414;
+    border: 1px solid #262626;
+    border-radius: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.movies-shows_chapter-card_footer_releases-span{
+    font-size: 16px;
+    font-family: ManropeMedium;
+}
+.movies-shows_chapter-card_footer_releases-span:nth-child(1){
+    color: #999999;
+}
+.movies-shows_chapter-card_footer_releases-span:nth-child(2){
+    color: #BFBFBF;
+}
+.card_footer-item-star{
+    width: 18px;
+    height: 18px;
 }

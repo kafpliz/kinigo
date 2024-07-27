@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-movies',
@@ -8,5 +9,11 @@ import { Component } from '@angular/core';
   styleUrl: './movies.component.scss'
 })
 export class MoviesComponent {
-
+  
+  constructor(private route: ActivatedRoute,){
+    route.params.subscribe(params=> {
+    console.log(params['id']);
+    
+    })
+  }
 }

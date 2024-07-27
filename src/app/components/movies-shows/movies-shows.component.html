@@ -5,33 +5,210 @@
                 <div class="swiper-slide" *ngFor="let item of bestMovies">
                     <img class="swiper-slide-background" [src]="item.backdrop.url" alt="backdrop" srcset="">
                     <div class="slide_content">
-                       <div class="slide_content-text">
-                        <h2 class="slide_content-h2">{{item.name}}</h2>
-                        <span class="slide_content-span">{{item.shortDescription}}</span>
-                       </div>
-                       <div class="slide_content-buttons">
+                        <div class="slide_content-text">
+                            <h2 class="slide_content-h2">{{item.name}}</h2>
+                            <span class="slide_content-span">{{item.shortDescription}}</span>
+                        </div>
+                        <div class="slide_content-buttons">
                             <div class="buttons-item">
                                 <img src="/assets/icons/watch.svg" width="28" alt="" srcset="">
                                 <span class="buttons-item-span">Play Now</span>
                             </div>
                             <div class="buttons-item">
-                                <div class="hot_button"><img src="/assets/icons/cross.png" width="28" alt="" srcset=""></div>
-                                <div class="hot_button"><img src="/assets/icons/like.png" width="28" alt="" srcset=""></div>
-                                <div class="hot_button"><img src="/assets/icons/sound.png" width="28" alt="" srcset=""></div>
+                                <div class="hot_button"><img src="/assets/icons/cross.png" width="28" alt="" srcset="">
+                                </div>
+                                <div class="hot_button"><img src="/assets/icons/like.png" width="28" alt="" srcset="">
+                                </div>
+                                <div class="hot_button"><img src="/assets/icons/sound.png" width="28" alt="" srcset="">
+                                </div>
                             </div>
-                       </div>
+                        </div>
                     </div>
                 </div>
 
-             
+
 
 
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+
         </div>
     </div>
+    <div class="content">
+        <div class="movies">
+            <div class="type">
+                <span class="type-span">Movies</span>
+            </div>
+            <div class="movies-shows_chapter">
+                <div class="movies-shows_chapter-header">
+                    <span class="movies-shows_chapter-span">Our Genres</span>
+                </div>
+                <div class="swiper movies-shows_chapter-catalog movies-shows_chapter-swiper-1">
 
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide movies-shows_chapter-card movies-shows_chapter-card-all_genres"
+                            *ngFor="let item of allGenres">
+                            <div class="movies-shows_chapter-imgs">
+                                <div class="movies-shows_chapter-fade"></div>
+                                <div class="movies-shows_chapter-img"
+                                    style="background: url('https://image.openmoviedb.com/kinopoisk-images/10853012/bdbcf76a-9ddb-4325-a263-3702f6645701/orig') no-repeat left 0 top 0 /cover; "
+                                    alt=""></div>
+                                <div class="movies-shows_chapter-img"
+                                    style="background: url('https://image.openmoviedb.com/kinopoisk-images/10853012/bdbcf76a-9ddb-4325-a263-3702f6645701/orig') no-repeat left 0 top 0 /cover; "
+                                    alt=""></div>
+                                <div class="movies-shows_chapter-img"
+                                    style="background: url('https://image.openmoviedb.com/kinopoisk-images/10853012/bdbcf76a-9ddb-4325-a263-3702f6645701/orig') no-repeat left 0 top 0 /cover; "
+                                    alt=""></div>
+                                <div class="movies-shows_chapter-img"
+                                    style="background: url('https://image.openmoviedb.com/kinopoisk-images/10853012/bdbcf76a-9ddb-4325-a263-3702f6645701/orig') no-repeat left 0 top 0 /cover; "
+                                    alt=""></div>
+
+                            </div>
+                            <div class="movies-shows_chapter-link">
+                                <span class="movies-shows_chapter-link-span">{{item.name |titlecase}}</span>
+                                <img src="/assets/icons/arrow.svg" width="18px" alt="" srcset="">
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="movies-shows_chapter">
+                <div class="movies-shows_chapter-header">
+                    <span class="movies-shows_chapter-span">Popular Top 10 In Genres</span>
+                </div>
+                <div class="swiper movies-shows_chapter-catalog movies-shows_chapter-swiper-2">
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide movies-shows_chapter-card  movies-shows_chapter-card_popular"
+                            *ngFor="let item of allGenres">
+                            <div class="movies-shows_chapter-imgs">
+                                <div class="movies-shows_chapter-fade"></div>
+                                <div class="movies-shows_chapter-img"
+                                    style="background: url('https://image.openmoviedb.com/kinopoisk-images/1600647/d667fbc0-ffa6-4fe5-97e2-0d60c22f6d00/orig') no-repeat left 0 top 0 /cover; "
+                                    alt=""></div>
+                                <div class="movies-shows_chapter-img"
+                                    style="background: url('https://image.openmoviedb.com/kinopoisk-images/1600647/d667fbc0-ffa6-4fe5-97e2-0d60c22f6d00/orig') no-repeat left 0 top 0 /cover; "
+                                    alt=""></div>
+                                <div class="movies-shows_chapter-img"
+                                    style="background: url('https://image.openmoviedb.com/kinopoisk-images/1600647/d667fbc0-ffa6-4fe5-97e2-0d60c22f6d00/orig') no-repeat left 0 top 0 /cover; "
+                                    alt=""></div>
+                                <div class="movies-shows_chapter-img"
+                                    style="background: url('https://image.openmoviedb.com/kinopoisk-images/1600647/d667fbc0-ffa6-4fe5-97e2-0d60c22f6d00/orig') no-repeat left 0 top 0 /cover; "
+                                    alt=""></div>
+
+                            </div>
+                            <div class="movies-shows_chapter__top"><span class="movies-shows_chapter__top-span">Top 10
+                                    In</span></div>
+                            <div class="movies-shows_chapter-link">
+
+                                <span class="movies-shows_chapter-link-span">{{item.name |titlecase}}</span>
+                                <img src="/assets/icons/arrow.svg" width="18px" alt="" srcset="">
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="movies-shows_chapter">
+                <div class="movies-shows_chapter-header">
+                    <span class="movies-shows_chapter-span">Trending Now</span>
+                </div>
+                <div class="swiper movies-shows_chapter-catalog movies-shows_chapter-swiper-1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide movies-shows_chapter-card " *ngFor="let item of trendingMovie">
+                            <div class="movies-shows_chapter-imgs">
+                                <div class="movies-shows_chapter-fade"></div>
+                                <div class="movies-shows_chapter-img"
+                                    style="background: url({{item.poster.url}}) no-repeat left 0 top 0 /cover; " alt="">
+                                </div>
+                            </div>
+                            <div class="movies-shows_chapter-card_footer">
+                                <div class="card_footer-item">
+                                    <img src="/assets/icons/clock.png" alt="icon" srcset="">
+                                    <span class="card_footer-item__span">{{item.movieLength | minutesToHours}}</span>
+                                </div>
+                                <div class="card_footer-item">
+                                    <img src="/assets/icons/eye.png" alt="icon" srcset="">
+                                    <span class="card_footer-item__span">{{item.votes.kp | hundredthousand}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="movies-shows_chapter">
+                <div class="movies-shows_chapter-header">
+                    <span class="movies-shows_chapter-span">New Releases</span>
+                </div>
+                <div class="swiper movies-shows_chapter-catalog movies-shows_chapter-swiper-1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide movies-shows_chapter-card " *ngFor="let item of trendingMovie">
+                            <div class="movies-shows_chapter-imgs">
+                                <div class="movies-shows_chapter-fade"></div>
+                                <div class="movies-shows_chapter-img"
+                                    style="background: url({{item.poster.url}}) no-repeat left 0 top 0 /cover; " alt="">
+                                </div>
+                            </div>
+                            <div class="movies-shows_chapter-card_footer">
+                                <div class="movies-shows_chapter-card_footer_releases">
+                                    <span class="movies-shows_chapter-card_footer_releases-span">Released at</span><span
+                                        class="movies-shows_chapter-card_footer_releases-span">14 April 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="movies-shows_chapter">
+                <div class="movies-shows_chapter-header">
+                    <span class="movies-shows_chapter-span">Must - Watch Movies</span>
+                </div>
+                <div class="swiper movies-shows_chapter-catalog movies-shows_chapter-swiper-3 ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide movies-shows_chapter-card movies-shows_chapter-card__must_watch"
+                            *ngFor="let item of mustwathes">
+                            <div class="movies-shows_chapter-imgs movies-shows_chapter-must_watch-imgs">
+                                <div class="movies-shows_chapter-fade"></div>
+                                <div class="movies-shows_chapter-img"
+                                    style="background: url({{item.poster.url}}) no-repeat left 0 top 0 /cover; " alt="">
+                                </div>
+                            </div>
+                            <div class="movies-shows_chapter-card_footer">
+                                <div class="movies-shows_chapter-card_footer">
+                                    <div class="card_footer-item">
+                                        <img src="/assets/icons/clock.png" alt="icon" srcset="">
+                                        <span class="card_footer-item__span">{{item.movieLength | minutesToHours}}</span>
+                                    </div>
+                                    <div class="card_footer-item">                          
+                                        <app-star-rating class="card_footer-item-star" [rating]="item.rating.kp"/>
+                                        <span class="card_footer-item__span">{{item.votes.kp | hundredthousand}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
 
 </div>

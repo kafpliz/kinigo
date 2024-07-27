@@ -8,4 +8,5 @@ export const routes: Routes = [
     {path: 'movies&shows', component: MoviesShowsComponent},
     {path: 'support', component: MoviesComponent},
     {path: 'subscriptions', component: MoviesComponent},
+    {path: 'movie/:id', component: MoviesComponent},
 ];
