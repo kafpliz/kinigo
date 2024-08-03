@@ -1,0 +1,261 @@
+<div class="movie">
+    <div class="movie-header" style="background: url({{movie?.backdrop?.url}} )no-repeat top 0 left 0 /cover;">
+        <div class="movie-header_div">
+
+            <div class="movie-header-text">
+                <h2 class="movie-header-h2">{{movie?.name}}</h2>
+                <span class="movie-header-span">{{movie?.shortDescription}}</span>
+            </div>
+            <div class="movie-header-buttons">
+                <a class="buttons-item">
+                    <img src="/assets/icons/watch.svg" width="28" alt="" srcset="">
+                    <span class="buttons-item-span">Play Now</span>
+                </a>
+                <div class="buttons-item">
+                    <div class="hot_button"><img src="/assets/icons/cross.png" width="28" alt="" srcset="">
+                    </div>
+                    <div class="hot_button"><img src="/assets/icons/like.png" width="28" alt="" srcset="">
+                    </div>
+                    <div class="hot_button"><img src="/assets/icons/sound.png" width="28" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="movie-content">
+
+        <div class="movie-content__div">
+            <div class="movie-content__item">
+                <span class="item_header">Description</span>
+                <span class="item_header-decription">{{movie?.description}}</span>
+            </div>
+            <div class="movie-content__item">
+                <span class="item_header">Cast</span>
+                <swiper-container class="swiper_actors" slides-per-view="8" space-between='20'>
+                    <swiper-slide class="swiper_actors-item" *ngFor="let item of movie?.persons">
+                        <img [src]="item?.photo" style="border-radius: 12px; aspect-ratio: 1 /1;" width="100%"
+                            srcset="">
+                    </swiper-slide>
+
+                </swiper-container>
+
+            </div>
+            <div class="movie-content__item">
+                <div class="">
+                    <span class="item_header" id="watch_section">Watch</span>
+                </div>
+                <div class="player-container">
+                    <app-vjs-player [options]="{autoplay: true, controls: true, sources: [{ src: '/path/to/video.mp4', type: 'video/mp4' }]}"></app-vjs-player>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="movie-content__div">
+            <div class="movie-content_container">
+                <div class="container-header">
+                    <img src="/assets/icons/movie-icon_1.svg" alt="" srcset="" width="24" height="24">
+                    <span class="container-header__span">
+                        Released Year
+                    </span>
+                </div>
+                <span class="container__span">{{movie?.year}}</span>
+            </div>
+            <div class="movie-content_container">
+                <div class="container-header">
+                    <img src="/assets/icons/movie-icon_2.svg" alt="" srcset="" width="24" height="24">
+                    <span class="container-header__span">
+                        Available Languages
+                    </span>
+                </div>
+                <div class="container_text">
+                    <div class="container_text__div" *ngFor="let item of movie?.availableLanguages">
+                        <span class="container_text__span">{{item | titlecase}}</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="movie-content_container">
+                <div class="container-header">
+                    <img src="/assets/icons/movie-icon_3.svg" alt="" srcset="" width="24" height="24">
+                    <span class="container-header__span">
+                        Ratings
+                    </span>
+                </div>
+                <div class="container_rating">
+                    <div class="container_rating__div">
+                        <span class="container_rating__span">
+                            IMDb
+                        </span>
+                    </div>
+                    <div class="container_rating__div">
+                        <span class="container_rating__span">
+                            StreamVibe
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-content_container">
+                <div class="container-header">
+                    <img src="/assets/icons/movie-icon_4.svg" alt="" srcset="" width="24" height="24">
+                    <span class="container-header__span">
+                        Gernes
+                    </span>
+                </div>
+                <div class="container_text">
+                    <div class="container_text__div" *ngFor="let item of movie?.genres">
+                        <span class="container_text__span">{{item.name | titlecase}}</span>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="movie-content_container">
+                <div class="container-header">
+                    <span class="container-header__span">
+                        Director
+                    </span>
+                </div>
+                <div class="container_block">
+                    <img [src]="movie?.director?.photo" class="container_block__img" height="60px" alt="" srcset="">
+                    <div class="container_block__div">
+                        <span class="container_block__span">{{movie?.director?.name | titlecase}}</span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="movie-content_container">
+                <div class="container-header">
+                    <span class="container-header__span">
+                        Music
+                    </span>
+                </div>
+                <div class="container_block">
+                    <img [src]="movie?.composer?.photo" class="container_block__img" height="60px" alt="" srcset="">
+                    <div class="container_block__div">
+                        <span class="container_block__span">{{movie?.composer?.name | titlecase}}</span>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-movie-content">
+        <div class="movie-content__item">
+            <span class="item_header">Description</span>
+            <span class="item_header-decription">{{movie?.description}}</span>
+        </div>
+        <div class="mobile-movie-content__item">
+            <div class="movie-content_container">
+                <div class="container-header">
+                    <img src="/assets/icons/movie-icon_1.svg" alt="" srcset="" width="24" height="24">
+                    <span class="container-header__span">
+                        Released Year
+                    </span>
+                </div>
+                <span class="container__span">{{movie?.year}}</span>
+            </div>
+            <div class="movie-content_container">
+                <div class="container-header">
+                    <img src="/assets/icons/movie-icon_2.svg" alt="" srcset="" width="24" height="24">
+                    <span class="container-header__span">
+                        Available Languages
+                    </span>
+                </div>
+                <div class="container_text">
+                    <div class="container_text__div" *ngFor="let item of movie?.availableLanguages">
+                        <span class="container_text__span">{{item | titlecase}}</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="movie-content_container">
+                <div class="container-header">
+                    <img src="/assets/icons/movie-icon_3.svg" alt="" srcset="" width="24" height="24">
+                    <span class="container-header__span">
+                        Ratings
+                    </span>
+                </div>
+                <div class="container_rating">
+                    <div class="container_rating__div">
+                        <span class="container_rating__span">
+                            IMDb
+                        </span>
+                    </div>
+                    <div class="container_rating__div">
+                        <span class="container_rating__span">
+                            StreamVibe
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-content_container">
+                <div class="container-header">
+                    <img src="/assets/icons/movie-icon_4.svg" alt="" srcset="" width="24" height="24">
+                    <span class="container-header__span">
+                        Gernes
+                    </span>
+                </div>
+                <div class="container_text">
+                    <div class="container_text__div" *ngFor="let item of movie?.genres">
+                        <span class="container_text__span">{{item.name | titlecase}}</span>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="movie-content_container">
+                <div class="container-header">
+                    <span class="container-header__span">
+                        Director
+                    </span>
+                </div>
+                <div class="container_block">
+                    <img [src]="movie?.director?.photo" class="container_block__img" height="60px" alt="" srcset="">
+                    <div class="container_block__div">
+                        <span class="container_block__span">{{movie?.director?.name | titlecase}}</span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="movie-content_container">
+                <div class="container-header">
+                    <span class="container-header__span">
+                        Music
+                    </span>
+                </div>
+                <div class="container_block">
+                    <img [src]="movie?.composer?.photo" class="container_block__img" height="60px" alt="" srcset="">
+                    <div class="container_block__div">
+                        <span class="container_block__span">{{movie?.composer?.name | titlecase}}</span>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-movie-content__persons">
+            <span class="item_header">Cast</span>
+            <swiper-container class="swiper_actors" slides-per-view="4" space-between='10'>
+                <swiper-slide class="swiper_actors-item" *ngFor="let item of movie?.persons">
+                    <img [src]="item?.photo" style="border-radius: 12px; aspect-ratio: 1 /1;" width="100%"
+                        srcset="">
+                </swiper-slide>
+
+            </swiper-container>
+
+        </div>
+        <div class="movie-content__item">
+            <div class="">
+                <span class="item_header" id="watch_section">Watch</span>
+            </div>
+            <div class="player-container">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+

@@ -1,20 +1,45 @@
 <div class="header">
-    <div class="header-item">
-      <div class="logo">
-        <img src="/assets/logotips/logo.svg" alt="" srcset="" width="200">
-      </div>
+  <div class="header-item">
+    <div class="logo">
+      <img class="logo-img" src="/assets/logotips/logo.svg" alt="" srcset="">
     </div>
-    <div class="header-item">
-      <div class="navbar">
-        <div class="navbar-item" routerLink="/" routerLinkActive="navbar-item-active" [routerLinkActiveOptions]="{exact: true}">Home</div>
-        <div class="navbar-item" routerLink="/movies&shows" routerLinkActive="navbar-item-active" [routerLinkActiveOptions]="{exact: true}">Movies & Shows</div>
-        <div class="navbar-item" routerLink="/support" routerLinkActive="navbar-item-active" [routerLinkActiveOptions]="{exact: true}">Support</div>
-        <div class="navbar-item" routerLink="/subscriptions" routerLinkActive="navbar-item-active" [routerLinkActiveOptions]="{exact: true}">Subscriptions</div>
-      </div>
+  </div>
+  <div class="header-item">
+    <div class="navbar">
+      <div class="navbar-item" routerLink="/" routerLinkActive="navbar-item-active"
+        [routerLinkActiveOptions]="{exact: true}">Home</div>
+      <div class="navbar-item" routerLink="/movies&shows" routerLinkActive="navbar-item-active"
+        [routerLinkActiveOptions]="{exact: true}">Movies & Shows</div>
+      <div class="navbar-item" routerLink="/support" routerLinkActive="navbar-item-active"
+        [routerLinkActiveOptions]="{exact: true}">Support</div>
+      <div class="navbar-item" routerLink="/subscriptions" routerLinkActive="navbar-item-active"
+        [routerLinkActiveOptions]="{exact: true}">Subscriptions</div>
     </div>
-    <div class="header-item"><div class="hotkeys">
+  </div>
+  <div class="header-item">
+    <div class="hotkeys">
       <img src="/assets/logotips/bell.svg" alt="" srcset="" width="34">
       <img src="/assets/logotips/loupe.svg" alt="" srcset="" width="34">
+    </div>
 
-    </div></div>
   </div>
+  <div class="header-item ">
+    <div class="mobile-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+
+      <ul class="menu__box">
+        <div class="menu__item" routerLink="/" routerLinkActive="menu__active"
+          [routerLinkActiveOptions]="{exact: true}">Home</div>
+        <div class="menu__item" routerLink="/movies&shows" routerLinkActive="menu__active"
+          [routerLinkActiveOptions]="{exact: true}">Movies & Shows</div>
+        <div class="menu__item" routerLink="/support" routerLinkActive="menu__active"
+          [routerLinkActiveOptions]="{exact: true}">Support</div>
+        <div class="menu__item" routerLink="/subscriptions" routerLinkActive="menu__active"
+          [routerLinkActiveOptions]="{exact: true}">Subscriptions</div>
+      </ul>
+    </div>
+  </div>
+</div>

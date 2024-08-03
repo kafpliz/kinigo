@@ -65,6 +65,8 @@
     justify-content: center;
     align-items: center;
     gap: 4px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .buttons-item-span {
@@ -93,33 +95,54 @@
 
 
 .movie-content {
+    min-height: 100px;
     width: 100%;
-    min-height: 1000px;
     display: flex;
     gap: 20px;
 }
 
-.movie-content__div:nth-child(1) {
-    flex: 3 1;
+.movie-content__div {
     display: flex;
     flex-direction: column;
+
+}
+
+.movie-content__div:nth-child(1) {
+    flex: 2 1;
     gap: 30px;
 }
 
-.movie-content_item {
-    width: 100%;
-
+.movie-content__div:nth-child(2) {
     background: #1A1A1A;
     border: 1px solid #262626;
     border-radius: 12px;
     padding: 50px;
+    flex: 1 1;
+    gap: 30px;
+    height: 940px;
 }
 
-.movie-content_item:nth-child(1) {
-    flex: 1 1;
+.movie-content__item {
+    background: #1A1A1A;
+    border: 1px solid #262626;
+    border-radius: 12px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
+
+}
+
+.movie-content__item:nth-child(1) {
     gap: 14px;
+}
+
+.movie-content__item:nth-child(2) {
+    gap: 30px;
+}
+
+.movie-content__item:nth-child(3) {
+    gap: 30px;
+    min-height: 500px;
 }
 
 .item_header {
@@ -134,41 +157,53 @@
     color: white;
 }
 
-.movie-content_item:nth-child(2) {
-    flex: 2 1;
+
+
+.swiper_actors {
+    width: 990px;
 }
 
-.movie-content_item:nth-child(3) {
-    flex: 3 1;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.movie-content__div:nth-child(2) {
-    flex: 1 1;
-    padding: 50px;
-    background: #1A1A1A;
-    border: 1px solid #262626;
+.swiper_actors-item {
+    width: 102px;
+    height: 115px;
     border-radius: 12px;
-    height: 940px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+
 }
+
+
+
+
+
+
+
+
+
+.player-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player {
+    width: 500px;
+    height: 250px;
+    box-shadow: 0 0 10px #B3B3B3;
+    border-radius: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .movie-content_container {
     display: flex;
@@ -255,6 +290,7 @@
 
 .container_block__img {
     border-radius: 8px;
+    aspect-ratio: 1 / 1;
 }
 
 .container_block__div {
@@ -274,4 +310,111 @@
 .container_block__span:nth-child(2) {
     font-size: 16px;
     color: #999999;
+}
+
+.mobile-movie-content {
+    display: none;
+}
+
+@media screen and (min-width:320px) and (max-width: 390px) {
+    .movie {
+        padding: 40px 16px;
+        gap: 60px;
+    }
+
+    .movie-header {
+        min-height: 435px;
+    }
+
+    .movie-header_div {
+        padding: 24px 24px 16px;
+        height: 468px;
+    }
+
+    .movie-header-h2 {
+
+        font-size: 24px;
+    }
+
+    .movie-header-span {
+        display: none
+    }
+
+    .movie-header-buttons {
+        width: 100%;
+        min-height: 120px;
+
+        flex-direction: column;
+    }
+
+    .buttons-item:nth-child(2) {
+        align-self: center;
+    }
+
+    .movie-content {
+        display: none;
+    }
+
+    .mobile-movie-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 300px;
+    }
+
+
+    .movie-content__item {
+
+        padding: 24px;
+    }
+
+    .item_header {
+        font-size: 14px;
+    }
+
+    .item_header-decription {
+        font-size: 14px;
+    }
+
+    .mobile-movie-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mobile-movie-content__item {
+        display: flex;
+        flex-direction: column;
+        background: #1A1A1A;
+        border: 1px solid #262626;
+        border-radius: 12px;
+        padding: 24px;
+        flex: 1 1;
+        gap: 20px;
+        height: 675px;
+    }
+
+    .mobile-movie-content__persons {
+        width: 100%;
+        background: #1A1A1A;
+        border: 1px solid #262626;
+        border-radius: 12px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .swiper_actors {
+        width: 100%;
+    }
+
+    .swiper_actors-item {
+        height: 0;
+        min-height: 60px;
+    }
+    .player-container{
+        height: 200px;
+    }
+
 }

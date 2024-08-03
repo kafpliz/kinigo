@@ -25,29 +25,34 @@
                 <span class="genres-info-span">Whether you're looking for a comedy to make you laugh, a drama to make you
                     think, or a documentary to learn something new</span>
             </div>
+
+            <swiper-container class="genres-catalog" slides-per-view="5" space-between='30' loop="true">
+                <swiper-slide class="genres-card"  *ngFor="let item of genres">
+                    <div class="genres-imgs">
+                        <div class="genres-fade"></div>
+                        <img class="genres-img" *ngFor="let img of item.genres" [src]="img.poster.url" alt="poster">
+                        
+                    </div>
+                    <div class="genres-link">
+                        <span class="genres-link-span">{{item.name | titlecase}}</span>
+                        <img src="/assets/icons/arrow.svg" width="18px" alt="" srcset="">
+                    </div>
+                </swiper-slide>
+            
+            
+                
+              </swiper-container>
     
-    
-            <div class="swiper genres-catalog">
+      <!--       <div class="swiper genres-catalog">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide genres-card" *ngFor="let item of genres ">
-                        <div class="genres-imgs">
-                            <div class="genres-fade"></div>
-                            <img class="genres-img" src="https://image.openmoviedb.com/kinopoisk-images/10853012/bdbcf76a-9ddb-4325-a263-3702f6645701/orig" alt="">
-                            <img class="genres-img" src="https://image.openmoviedb.com/kinopoisk-images/10853012/bdbcf76a-9ddb-4325-a263-3702f6645701/orig" alt="">
-                            <img class="genres-img" src="https://image.openmoviedb.com/kinopoisk-images/10853012/bdbcf76a-9ddb-4325-a263-3702f6645701/orig" alt="">
-                            <img class="genres-img" src="https://image.openmoviedb.com/kinopoisk-images/10853012/bdbcf76a-9ddb-4325-a263-3702f6645701/orig" alt="">
-                            
-                        </div>
-                        <div class="genres-link">
-                            <span class="genres-link-span">{{item.name | titlecase}}</span>
-                            <img src="/assets/icons/arrow.svg" width="18px" alt="" srcset="">
-                        </div>
+                    <div class="swiper-slide genres-card">
+                       
                     </div>
                  
                     
                 </div>
               
-            </div>
+            </div> -->
            
     
     

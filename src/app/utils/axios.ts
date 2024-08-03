@@ -1,13 +1,13 @@
 import axios from "axios"
 
-export let getData =async (token:string, url:string) => {
+export let getData =async (url:string,) => {
     try {
-        let response = await axios.get('https://api.kinopoisk.dev/'+url, {
+        let response = await axios.get('http://localhost:3000/' + url, {
             headers: {
-                'X-API-KEY': token
+                "Content-Type": 'application/json'
             }
-         })         
-         return response.data
+        })         
+        return response.data
     } catch (error) {
         console.log(error);
         
